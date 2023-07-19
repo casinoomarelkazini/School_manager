@@ -1,4 +1,4 @@
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
-
+# BY : Omar elkazini
+# Visite https://github.com/casinoomarelkazini/School_manager for more information
 from . import student
 from . import sale_order
