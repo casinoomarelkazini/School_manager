@@ -16,6 +16,7 @@
         'security/ir.model.access.csv',
         'views/sale_order_view.xml',
         'views/student_view.xml',
+        'views/teacher_views.xml',
     ],
     'demo': [
         'demo/demo.xml',
