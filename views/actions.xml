@@ -1,0 +1,46 @@
+    <!-- school_management/views/actions.xml -->
+
+<odoo>
+    <data>
+    
+
+      
+
+        <!-- Action pour afficher la liste des classes -->
+        <record id="action_class_list" model="ir.actions.act_window">
+            <field name="name">Classes</field>
+            <field name="res_model">school.class</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[]</field>
+        </record>
+
+        <!-- Action pour afficher le formulaire d'ajout d'une classe -->
+        <record id="action_add_class" model="ir.actions.act_window">
+            <field name="name">Add Class</field>
+            <field name="res_model">school.class</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_class_form"/>
+        </record>
+
+        <!-- Action pour afficher la liste des matières -->
+        <record id="action_matiere_list" model="ir.actions.act_window">
+            <field name="name">Matières</field>
+            <field name="res_model">school.matiere</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[]</field>
+        </record>
+
+        <!-- Action pour afficher le formulaire d'ajout d'une matière -->
+        <record id="action_add_matiere" model="ir.actions.act_window">
+            <field name="name">Add Matière</field>
+            <field name="res_model">school.matiere</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_matiere_form"/>
+        </record>
+
+        <!-- Menu School_manager -->
+        <menuitem id="menu_school_manager" name="School Manager" parent="base.menu_administration" sequence="10"/>
+        <menuitem id="menu_class" name="Classes" parent="menu_school_manager" sequence="30" action="action_class_list"/>
+        <menuitem id="menu_matiere" name="Matières" parent="menu_school_manager" sequence="40" action="action_matiere_list"/>
+    </data>
+</odoo>

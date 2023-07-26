@@ -1,0 +1,23 @@
+<odoo>
+    <data>
+        <record id="view_matiere_form" model="ir.ui.view">
+            <field name="name">school.matiere.form</field>
+            <field name="model">school.matiere</field>
+            <field name="arch" type="xml">
+                <form>
+                    <!-- Définir ici la mise en page du formulaire pour les matières -->
+                </form>
+            </field>
+        </record>
+
+        <record id="view_matiere_tree" model="ir.ui.view">
+            <field name="name">school.matiere.tree</field>
+            <field name="model">school.matiere</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <!-- Définir ici la mise en page de la liste des matières -->
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>

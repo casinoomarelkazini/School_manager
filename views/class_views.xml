@@ -1,0 +1,23 @@
+<odoo>
+    <data>
+        <record id="view_class_form" model="ir.ui.view">
+            <field name="name">school.class.form</field>
+            <field name="model">school.class</field>
+            <field name="arch" type="xml">
+                <form>
+                    <!-- Définir ici la mise en page du formulaire pour les classes -->
+                </form>
+            </field>
+        </record>
+
+        <record id="view_class_tree" model="ir.ui.view">
+            <field name="name">school.class.tree</field>
+            <field name="model">school.class</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <!-- Définir ici la mise en page de la liste des classes -->
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>
